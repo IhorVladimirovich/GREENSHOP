@@ -1,0 +1,104 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  font-size: 0;
+  border-bottom: 1px solid rgba(70, 163, 88, 50%);
+  padding-top: 30px;
+  padding-bottom: 17px;
+  margin-bottom: 12px;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.header-nav {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.btn {
+  min-width: 100px;
+  font-size: 16px;
+  background: #46a358;
+  color: #ffffff;
+  border: 1px solid #46a358;
+  border-radius: 6px;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #fff;
+  color: #46a358;
+}
+.btn:hover img {
+  display: none;
+}
+.btn img,
+.btn span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-nav_list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.header-nav_list .active {
+  font-weight: 700;
+}
+.header-nav_list a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+.header-nav_list li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.logo {
+  width: 150px;
+}
+.btn {
+  width: 100px;
+}
+.header-nav {
+  width: calc(100% - 250px);
+}
+.banner {
+  padding: 30px;
+  background: linear-gradient(
+    97.77deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%
+  );
+}
+.banner_text,
+.banner_img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+}
+.banner_img {
+  text-align: center;
+  width: 38px;
+}
+.title-add {
+  text-transform: uppercase;
+}
+.banner h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  margin: 0px;
+}
+.banner h1 + p {
+  margin-top: 0px;
+  margin-bottom: 44px;
+}
+.banner .btn {
+  text-transform: uppercase;
+  padding: 10px;
+}
