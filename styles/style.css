@@ -1,6 +1,100 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-RegularItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+body {
+  font-family: "Cera Pro";
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .header {
   font-size: 0;
@@ -29,6 +123,7 @@
   padding: 6px 10px;
   text-align: center;
   text-decoration: none;
+  font-weight: 500;
 }
 .btn:hover {
   background: #fff;
@@ -69,6 +164,8 @@
   width: calc(100% - 250px);
 }
 .banner {
+  font-style: 14px;
+  margin-bottom: 50px;
   padding: 30px;
   background: linear-gradient(
     97.77deg,
@@ -84,21 +181,162 @@
 }
 .banner_img {
   text-align: center;
-  width: 38px;
+  width: 10px;
 }
 .title-add {
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .banner h1 {
   text-transform: uppercase;
   font-size: 70px;
+  line-height: 1;
   margin: 0px;
+  font-weight: 900;
+}
+h1 mark {
+  color: #46a358;
+  background: none;
 }
 .banner h1 + p {
   margin-top: 0px;
   margin-bottom: 44px;
+  color: #727272;
 }
 .banner .btn {
   text-transform: uppercase;
-  padding: 10px;
+  padding: 6px 10px;
+  min-width: 140px;
+  font-weight: 700;
+}
+.sidebar h4 {
+  margin-top: 0;
+  font-style: 18px;
+}
+
+.sidebar {
+  float: left;
+  width: 310px;
+  padding: 14px 18px;
+  font-size: 15px;
+  background: #fbfbfb;
+}
+.sidebar__cat {
+  list-style-type: none;
+  padding: 0 0 0 12px;
+  margin: 0;
+}
+.sidebar__cat .active {
+  color: #46a358;
+  font-weight: 700;
+}
+
+.sidebar__cat li {
+  margin-bottom: 20px;
+}
+.sidebar__cat a {
+  text-decoration: none;
+  color: inherit;
+}
+.sidebar__cat a:hover {
+  color: #46a358;
+}
+.sidebar + .content {
+  float: right;
+  width: calc(100% - 310px);
+  padding-left: 50px;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+}
+.product-sort__filter {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.product-sort__filter li {
+  display: inline-block;
+  margin-right: 37px;
+}
+.product-sort__filter li.active {
+  font-weight: 700;
+  color: #46a358;
+}
+.product-sort__filter a:hover {
+  color: #46a358;
+}
+.product-sort__filter a {
+  text-decoration: none;
+  color: inherit;
+}
+.product-sort__sorting {
+  float: right;
+}
+.product-sort__sorting__title,
+.product-sort__select {
+  display: inline-block;
+  vertical-align: middle;
+}
+.product-sort__sorting__title {
+  margin-right: 10px;
+}
+.product-sort__option:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: url(../images/Arrow\ -\ Down\ 2.svg);
+}
+.product__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 50px;
+}
+.product__item {
+  width: 33.33%;
+}
+.product__img {
+  background: rgba(251, 251, 251, 1);
+}
+.product__item h5 {
+  margin: 0;
+}
+.price {
+  font-style: 18px;
+  font-weight: 700;
+  color: #46a358;
+}
+.product__item h5 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.pages {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.pages li {
+  margin-left: 10px;
+  display: inline-block;
+  text-align: center;
+}
+.pages li.active a,
+.pages a:hover {
+  background: #46a358;
+  color: #fff;
+}
+.pages a {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  padding-top: 3px;
+  text-decoration: none;
+  color: inherit;
 }
