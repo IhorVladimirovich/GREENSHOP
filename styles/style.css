@@ -90,6 +90,8 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 .clearfix::after {
   content: "";
@@ -103,13 +105,8 @@ body {
   padding-bottom: 17px;
   margin-bottom: 12px;
 }
-.logo {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px;
-}
+.logo,
 .header-nav {
-  display: inline-block;
   vertical-align: middle;
   font-size: 16px;
 }
@@ -139,9 +136,10 @@ body {
 }
 .header-nav_list {
   list-style-type: none;
-  text-align: center;
+  display: flex;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 .header-nav_list .active {
   font-weight: 700;
@@ -151,7 +149,6 @@ body {
   color: #3d3d3d;
 }
 .header-nav_list li {
-  display: inline-block;
   margin: 0 20px;
 }
 .logo {
@@ -162,6 +159,7 @@ body {
 }
 .header-nav {
   width: calc(100% - 250px);
+  flex-grow: 1;
 }
 .banner {
   font-style: 14px;
@@ -172,15 +170,15 @@ body {
     rgba(245, 245, 245, 0.5) -23.46%,
     rgba(245, 245, 245, 0.5) 107.51%
   );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .banner_text,
 .banner_img {
-  display: inline-block;
-  vertical-align: middle;
   width: 60%;
 }
 .banner_img {
-  text-align: center;
   width: 10px;
 }
 .title-add {
@@ -208,6 +206,9 @@ h1 mark {
   padding: 6px 10px;
   min-width: 140px;
   font-weight: 700;
+}
+.container2 {
+  display: flex;
 }
 .sidebar h4 {
   margin-top: 0;
@@ -248,7 +249,6 @@ h1 mark {
 }
 
 .clearfix::after {
-  display: block;
   clear: both;
 }
 .product-sort__filter {
@@ -258,7 +258,6 @@ h1 mark {
   float: left;
 }
 .product-sort__filter li {
-  display: inline-block;
   margin-right: 37px;
 }
 .product-sort__filter li.active {
@@ -277,16 +276,14 @@ h1 mark {
 }
 .product-sort__sorting__title,
 .product-sort__select {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
 }
 .product-sort__sorting__title {
   margin-right: 10px;
 }
 .product-sort__option:after {
   content: "";
-  display: inline-block;
-  vertical-align: middle;
+
   width: 16px;
   height: 16px;
   background: url(../images/Arrow\ -\ Down\ 2.svg);
